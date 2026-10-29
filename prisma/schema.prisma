@@ -1,0 +1,16 @@
+// Content is stored as one JSON document per section (profile, skills, projects,
+// experience, education). This keeps the admin simple and reordering trivial.
+generator client {
+  provider = "prisma-client"
+  output   = "../src/generated/prisma"
+}
+
+datasource db {
+  provider = "postgresql"
+}
+
+model SiteContent {
+  key       String   @id
+  value     Json
+  updatedAt DateTime @updatedAt
+}

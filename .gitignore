@@ -1,0 +1,30 @@
+# Dependencies
+node_modules/
+
+# Next.js and deployment output
+.next/
+out/
+build/
+dist/
+coverage/
+.vercel/
+.turbo/
+.output/
+.cache/
+
+# Private environment and local tool configuration
+.env*
+!.env.example
+.envrc
+.envrc.local
+.npmrc
+
+# Generated Prisma client and TypeScript output
+src/generated/
+*.tsbuildinfo
+next-env.d.ts
+
+# Local logs and OS/editor files
+*.log
+Thumbs.db
+.DS_Store
